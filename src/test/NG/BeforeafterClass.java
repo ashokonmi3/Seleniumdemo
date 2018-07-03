@@ -11,10 +11,17 @@ public class BeforeafterClass {
 	public WebDriver driver;
 
 	@Test
-	public void f() {
+	public void f() throws InterruptedException {
 		driver.get("https://www.gmail.com");
+		Thread.sleep(5000);
 		Assert.assertEquals("Gmail", driver.getTitle());
 
+	}
+
+	@Test
+	public void verifyPageTitle2() {
+		driver.get("http://www.rediff.com/");
+		Assert.assertEquals("Yahoo", driver.getTitle());
 	}
 
 	@BeforeClass

@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.NG.Dependencies">
+      <class name="test.NG.Crossbrowser">
         <methods>
-          <include name="method3"/>
+          <include name="setup"/>
+          <include name="testParameterWithXML"/>
         </methods>
-      </class> <!-- test.NG.Dependencies -->
+      </class> <!-- test.NG.Crossbrowser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

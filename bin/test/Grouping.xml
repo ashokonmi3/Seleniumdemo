@@ -3,7 +3,9 @@
   <test name="Test">
   <groups>
   <run>
-  <include name = "sanity"/>
+  <include name = "sanity" />
+      <include name = "regression" />
+    
   </run>
   </groups>
     <classes>

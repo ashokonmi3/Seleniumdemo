@@ -3,29 +3,35 @@ package test.NG;
 import org.testng.annotations.Test;
 
 //public class Dependencies {
-//	@Test
-//	public void method1() {
+//	@Test(priority = 1)
+//	public void methoda() {
 //		System.out.println("This is method 1");
 //	}
 //
-//	@Test(dependsOnMethods = { "method1" })
-//	public void method2() {
+//	@Test(dependsOnMethods = { "methoda" }, priority = 4)
+//	public void methodb() {
 //		System.out.println("This is method 2");
 //	}// This test will be failed.
 //
-//	@Test
-//	public void method3() {
+//	@Test(priority = 2)
+//	public void methodc() {
 //		System.out.println("This is method 3");
 //		throw new RuntimeException();
 //	}
 //
-//	@Test(dependsOnMethods = { "method3" })
-//	public void method4() {
+//	@Test(dependsOnMethods = { "methodc" }, priority = 3)
+//	public void methodd() {
 //		System.out.println("This is method 4");
+//	}
+//
+//	@Test
+//	public void methode() {
+//		System.out.println("This is method 0");
 //	}
 //
 //}
 //
+// ================================================
 public class Dependencies {
 	@Test
 	public void method1() {
@@ -49,5 +55,3 @@ public class Dependencies {
 		System.out.println("This is method 4");
 	}
 }
-//
-//
