@@ -2,9 +2,7 @@
 <suite name="Suite" parallel="false">
   <test name="Test">
     <classes>
-      <class name="test.NG.TestSuite01"/>
-      <class name="test.NG.TestSuite02"/>
-      
+      <class name="test.NG.demo"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

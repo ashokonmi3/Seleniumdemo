@@ -1,37 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="tests">
-  <test name="FirefoxTest(failed)" parallel="tests">
-    <parameter name="browser" value="Firefox"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="test.NG.Crossbrowser">
+      <class name="test.NG.firsttest">
         <methods>
-          <include name="setup"/>
-          <include name="testParameterWithXML"/>
+          <include name="verifyTitleNegative"/>
         </methods>
-      </class> <!-- test.NG.Crossbrowser -->
+      </class> <!-- test.NG.firsttest -->
     </classes>
-  </test> <!-- FirefoxTest(failed) -->
-  <test name="EdgeTest(failed)" parallel="tests">
-    <parameter name="browser" value="Edge"/>
-    <classes>
-      <class name="test.NG.Crossbrowser">
-        <methods>
-          <include name="setup"/>
-          <include name="testParameterWithXML"/>
-        </methods>
-      </class> <!-- test.NG.Crossbrowser -->
-    </classes>
-  </test> <!-- EdgeTest(failed) -->
-  <test name="ChromeTest(failed)" parallel="tests">
-    <parameter name="browser" value="Chrome"/>
-    <classes>
-      <class name="test.NG.Crossbrowser">
-        <methods>
-          <include name="setup"/>
-          <include name="testParameterWithXML"/>
-        </methods>
-      </class> <!-- test.NG.Crossbrowser -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
-</suite> <!-- Failed suite [TestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
